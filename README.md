@@ -105,6 +105,7 @@ F5 to switch to Presentation Mode
     - [some examples](https://delightlylinux.wordpress.com/2015/11/13/colored-text-with-toilet/)
   - use same fonts like [figlet](http://manpages.ubuntu.com/manpages/precise/man6/figlet.6.html): `/usr/share/figlet`
   - [more Fonts](http://www.figlet.org/)
+  - [my figlet font selection](https://github.com/dele1972/my-figlet-font-selection#my-figlet-font-selection)
   - Addons
     - [cowsay](https://en.wikipedia.org/wiki/Cowsay)
       - `sudo apt-get install cowsay`
@@ -165,6 +166,11 @@ F5 to switch to Presentation Mode
   syn match red "awesome"
   
   hi def link red Special
+
+
+  syn match matchURL /http[s]\?:\/\/[[:alnum:]%\/_#.-]*/
+  " hi matchURL ctermfg=14
+  hi matchURL ctermfg=red
 ```
 
 - some Syntax highlighting infos:
