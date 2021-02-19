@@ -46,7 +46,7 @@ Gathered Information and Files to turning VIM to a presentation Tool
 - optional Plugin: [junegunn/goyo.vim](https://github.com/junegunn/goyo.vim)
   - Distraction-free writing in Vim
 
-<a name="nich_config"></a>
+<a name="nick_config"></a>
 
 ### config: [↸](#toc)
 
