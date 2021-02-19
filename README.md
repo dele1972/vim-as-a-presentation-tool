@@ -166,45 +166,45 @@ F5 to switch to Presentation Mode
 
 ##### cowsay [↸](#toc)
 
-    - [cowsay](https://en.wikipedia.org/wiki/Cowsay)
-      - `sudo apt-get install cowsay`
+- [cowsay](https://en.wikipedia.org/wiki/Cowsay)
+  - `sudo apt-get install cowsay`
 
 <a name="fortune"></a>
 
 ##### fortune [↸](#toc)
 
-    - fortune
-      - `sudo apt-get install fortune`
+- fortune
+  - `sudo apt-get install fortune`
 
 <a name="linuxlogo"></a>
 
 ##### linuxlogo [↸](#toc)
 
-    - linuxlogo
-      - `sudo apt-get install linuxlogo`
-      - `linuxlogo -a -l`
+- linuxlogo
+  - `sudo apt-get install linuxlogo`
+  - `linuxlogo -a -l`
 
 <a name="boxes"></a>
 
 ##### boxes [↸](#toc)
 
-    - boxes
-      - `sudo apt-get install boxes`
+- boxes
+  - `sudo apt-get install boxes`
 
 <a name="lolcat"></a>
 
 ##### lolcat [↸](#toc)
 
-    - lolcat
-      - `sudo apt-get install boxes`
+- lolcat
+  - `sudo apt-get install boxes`
 
 <a name="Examples"></a>
 
 ##### Examples [↸](#toc)
 
-      - `fortune | cowsay -f eyes | toilet --metal -f term`
-      - `linuxlogo -a -l | toilet --metal -f term`
-      - `toilet -f future 'Linux is fun!' | boxes -d cat -a hc -p h8 | lolcat`
+- `fortune | cowsay -f eyes | toilet --metal -f term`
+- `linuxlogo -a -l | toilet --metal -f term`
+- `toilet -f future 'Linux is fun!' | boxes -d cat -a hc -p h8 | lolcat`
 
 <a name="Pictures"></a>
 
