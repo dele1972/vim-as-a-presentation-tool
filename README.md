@@ -8,7 +8,7 @@ Gathered Information and Files to turning VIM to a presentation Tool
 
 1. [Sources](#Sources)
 1. [Nick's approach](#NicksApproach)
-   1. [config:](#nick_config:)
+   1. [config:](#nick_config)
 1. [Sebastian's approach](#SebastiansApproach)
    1. [VIM with specific Settings](#specificSettings)
    1. [Snippet to include special Characters](#Snippet)
@@ -46,7 +46,7 @@ Gathered Information and Files to turning VIM to a presentation Tool
 - optional Plugin: [junegunn/goyo.vim](https://github.com/junegunn/goyo.vim)
   - Distraction-free writing in Vim
 
-<a name="nich_config:"></a>
+<a name="nich_config"></a>
 
 ### config: [↸](#toc)
 
