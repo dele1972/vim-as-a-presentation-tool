@@ -2,7 +2,31 @@
 
 Gathered Information and Files to turning VIM to a presentation Tool
 
-## Sources
+## Table of Content
+
+<a name="toc"></a>
+
+1. [Sources](#Sources)
+1. [Nick's approach](#NicksApproach)
+   1. [config:](#nick_config:)
+1. [Sebastian's approach](#SebastiansApproach)
+   1. [VIM with specific Settings](#specificSettings)
+   1. [Snippet to include special Characters](#Snippet)
+   1. [ASCII ART and Border](#ASCII-ART-and-Border)
+      1. [config](#config)
+      1. [Addons](#Addons)
+         1. [cowsay](#cowsay)
+         1. [fortune](#fortune)
+         1. [linuxlogo](#linuxlogo)
+         1. [boxes](#boxes)
+         1. [lolcat](#lolcat)
+         1. [Examples](#Examples)
+   1. [Pictures](#Pictures)
+   1. [Highlighting](#Highlighting)
+
+<a name="Sources"></a>
+
+## Sources [↸](#toc)
 
 - [Giving a Text Based Slide Presentation in Vim without Plugins (Nick Janetakis, 26.09.2020)](https://youtu.be/7fIR55kkTwc)
 - [Creating technical presentations with VIM (Sebastian Daschner, 21.07.2020)](https://youtu.be/GDa7hrbcCB8)
@@ -11,7 +35,9 @@ Gathered Information and Files to turning VIM to a presentation Tool
     - [.vimrc](https://github.com/sdaschner/dotfiles/blob/master/.vimrc)
     - [snippets](https://github.com/sdaschner/dotfiles/blob/master/.vim/UltiSnips/all.snippets)
 
-## Nick's approach
+<a name="NicksApproach"></a>
+
+## Nick's approach [↸](#toc)
 
 - slides are named with `vpm` extension for Vim Presentation Mode
 - change to slide directory and open all files in the buffer
@@ -20,7 +46,9 @@ Gathered Information and Files to turning VIM to a presentation Tool
 - optional Plugin: [junegunn/goyo.vim](https://github.com/junegunn/goyo.vim)
   - Distraction-free writing in Vim
 
-### config:
+<a name="nich_config:"></a>
+
+### config: [↸](#toc)
 
 ```vim
   " Mappings to make Vim more freindly towards presenting slides.
@@ -34,9 +62,13 @@ Gathered Information and Files to turning VIM to a presentation Tool
     endif
   endfunction
 ```
-## Sebastian's approach
+<a name="SebastiansApproach"></a>
 
-### VIM with specific Settings
+## Sebastian's approach [↸](#toc)
+
+<a name="specificSettings"></a>
+
+### VIM with specific Settings [↸](#toc)
 
 F5 to switch to Presentation Mode
 
@@ -93,9 +125,13 @@ F5 to switch to Presentation Mode
   augroup END
 ```
 
-### Snippet to include special Characters
+<a name="Snippet"></a>
 
-### ASCII ART and Border
+### Snippet to include special Characters [↸](#toc)
+
+<a name="ASCII-ART-and-Border"></a>
+
+### ASCII ART and Border [↸](#toc)
 
 - command line tool: [toilet](http://manpages.ubuntu.com/manpages/bionic/man1/toilet.1.html)
   - `sudo apt-get update`
@@ -106,22 +142,10 @@ F5 to switch to Presentation Mode
   - use same fonts like [figlet](http://manpages.ubuntu.com/manpages/precise/man6/figlet.6.html): `/usr/share/figlet`
   - [more Fonts](http://www.figlet.org/)
   - [my figlet font selection](https://github.com/dele1972/my-figlet-font-selection#my-figlet-font-selection)
-  - Addons
-    - [cowsay](https://en.wikipedia.org/wiki/Cowsay)
-      - `sudo apt-get install cowsay`
-    - fortune
-      - `sudo apt-get install fortune`
-    - linuxlogo
-      - `sudo apt-get install linuxlogo`
-      - `linuxlogo -a -l`
-    - boxes
-      - `sudo apt-get install boxes`
-    - lolcat
-      - `sudo apt-get install boxes`
-    - **Examples**
-      - `fortune | cowsay -f eyes | toilet --metal -f term`
-      - `linuxlogo -a -l | toilet --metal -f term`
-      - `toilet -f future 'Linux is fun!' | boxes -d cat -a hc -p h8 | lolcat`
+
+<a name="config"></a>
+
+#### config [↸](#toc)
 
 ```vim
   " adds a line of <
@@ -134,7 +158,57 @@ F5 to switch to Presentation Mode
     nmap <leader>1 :.!toilet -w 200 -f term -F border<CR>
 ```
 
-### Pictures
+<a name="Addons"></a>
+
+#### Addons [↸](#toc)
+
+<a name="cowsay"></a>
+
+##### cowsay [↸](#toc)
+
+    - [cowsay](https://en.wikipedia.org/wiki/Cowsay)
+      - `sudo apt-get install cowsay`
+
+<a name="fortune"></a>
+
+##### fortune [↸](#toc)
+
+    - fortune
+      - `sudo apt-get install fortune`
+
+<a name="linuxlogo"></a>
+
+##### linuxlogo [↸](#toc)
+
+    - linuxlogo
+      - `sudo apt-get install linuxlogo`
+      - `linuxlogo -a -l`
+
+<a name="boxes"></a>
+
+##### boxes [↸](#toc)
+
+    - boxes
+      - `sudo apt-get install boxes`
+
+<a name="lolcat"></a>
+
+##### lolcat [↸](#toc)
+
+    - lolcat
+      - `sudo apt-get install boxes`
+
+<a name="Examples"></a>
+
+##### Examples [↸](#toc)
+
+      - `fortune | cowsay -f eyes | toilet --metal -f term`
+      - `linuxlogo -a -l | toilet --metal -f term`
+      - `toilet -f future 'Linux is fun!' | boxes -d cat -a hc -p h8 | lolcat`
+
+<a name="Pictures"></a>
+
+### Pictures [↸](#toc)
 
 - scripting
 - out of slide: `!!:open cover.png`
@@ -151,7 +225,9 @@ F5 to switch to Presentation Mode
   endfunction
 ```
   
-### Highlighting
+<a name="Highlighting"></a>
+
+### Highlighting [↸](#toc)
 
 - by Syntax Highlighting
 - `syntax.vim` (in the slides folder)
